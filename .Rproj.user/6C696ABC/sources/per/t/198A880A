@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1640470165783.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3941580939",
+    "id" : "198A880A",
+    "lastKnownWriteTime" : 1640559801,
+    "last_content_update" : 1640559801870,
+    "path" : "~/GitHub/jayeung12.github.io/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "cursorPosition" : "369,118",
+        "last_setup_crc32" : "78473350bb338d19",
+        "scrollLine" : "367",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
