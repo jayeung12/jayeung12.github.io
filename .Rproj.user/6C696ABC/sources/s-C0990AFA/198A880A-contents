@@ -40,7 +40,7 @@ Now, let's **load some example data** I've provided:
 #We've provided some sample data for the purposes of this tutorial
 #Load provided example data
 
-data = 
+data = ""
   
 ```
 
