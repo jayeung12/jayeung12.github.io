@@ -1,0 +1,17 @@
+name: "virema-faq"
+navbar:
+  title: "ViReMa in R"
+  left:
+    - text: "Tutorial"
+      href: index.html
+    - text: "ViReMa with Shiny"
+      href: https://jasonyeung.shinyapps.io/virema/
+  right: 
+    - icon: fa-envelope fa-lg
+      href: mailto:<jasonyeung012@gmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/jayeung12/
+output:
+  html_document:
+    theme: yeti
+    toc: true
