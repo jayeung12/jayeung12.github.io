@@ -312,7 +312,12 @@ library(circlize)</code></pre>
 <pre class="r"><code>#We&#39;ve provided some sample data for the purposes of this tutorial
 #Load provided example data
 
-data = </code></pre>
+txt1 = &quot;https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_1.txt&quot;
+txt2 = &quot;https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_2.txt&quot;  
+txtdf1=read.table(txt1,skip=1, sep=&quot;\t&quot;,stringsAsFactors=FALSE, quote=&quot;&quot;)
+txtdf2=read.table(txt2,skip=1, sep=&quot;\t&quot;,stringsAsFactors=FALSE, quote=&quot;&quot;)
+
+data = rbind(txtdf1,txtdf2)</code></pre>
 <p>Alternatively, load in your own data and follow along with the rest of the tutorial. Naturally, the plots will not be exactly the same as the ones we show.</p>
 <pre class="r"><code>#Or you can use your own data
 #Load own data from local directory

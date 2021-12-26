@@ -40,8 +40,14 @@ Now, let's **load some example data** I've provided:
 #We've provided some sample data for the purposes of this tutorial
 #Load provided example data
 
-data = ""
-  
+txt1 = "https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_1.txt"
+txt2 = "https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_2.txt"  
+txtdf1=read.table(txt1,skip=1, sep="\t",stringsAsFactors=FALSE, quote="")
+txtdf2=read.table(txt2,skip=1, sep="\t",stringsAsFactors=FALSE, quote="")
+
+data = rbind(txtdf1,txtdf2)
+
+
 ```
 
 Alternatively, load in your own data and follow along with the rest of the tutorial. Naturally, the plots will not be exactly the same as the ones we show.

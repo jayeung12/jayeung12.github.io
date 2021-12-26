@@ -1,1 +1,1 @@
-{"chunk_definitions":[],"doc_write_time":1640478160}
+{"chunk_definitions":[{"chunk_id":"csetup_chunk","chunk_label":"setup","document_id":"198A880A","expansion_state":0,"options":{"engine":"r","include":false,"label":"setup"},"row":9,"row_count":1,"visible":true},{"chunk_id":"c9ef40yepx87n","chunk_label":"import","document_id":"198A880A","expansion_state":0,"options":{"engine":"r","eval":false,"label":"import"},"row":50,"row_count":1,"visible":true}],"default_chunk_options":{"echo":true},"doc_write_time":1640487128,"working_dir":null}
