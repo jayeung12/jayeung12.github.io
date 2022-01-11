@@ -1,0 +1,20 @@
+name: "virema-faq"
+navbar:
+  title: "Visualizing Viral Recombination: Analyzing ViReMa Output"
+  left:
+    - text: "Tutorial with R"
+      href: rtutorial.html
+    - text: "Tutorial with Shiny"
+      href: shinytutorial.html
+    - text: "ViReMa Web App"
+      href: https://jasonyeung.shinyapps.io/virema/
+
+  right: 
+    - icon: fa-envelope fa-lg
+      href: mailto:<jasonyeung012@gmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/jayeung12/
+output:
+  html_document:
+    theme: yeti
+    fig_caption: false

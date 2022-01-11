@@ -1,0 +1,11 @@
+"0","circos.track(ylim = c(1,120),
+             panel.fun = function(x, y) {
+              
+               circos.axis(labels.cex = 0.6)
+               circos.genomicLink(b1,b2,col = add_transparency(""black"", 0.95), arr.type = ""triangle"",directional = 1,
+               border = NA)
+             })
+"
+"2","Error in polygon(polar2Cartesian(d2), ...) : 
+  plot.new has not been called yet
+"
