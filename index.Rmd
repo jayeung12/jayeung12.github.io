@@ -11,6 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Read the original ViReMa paper:**<br>
 Andrew Routh, John E. Johnson, Discovery of functional genomic motifs in viruses with ViReMa-a Virus Recombination Mapper-for analysis of next-generation sequencing data, Nucleic Acids Research, Volume 42, Issue 2, 1 January 2014, Page e11, https://doi.org/10.1093/nar/gkt916
+
+[**Read articles using ViReMa**](https://app.dimensions.ai/discover/publication?or_subset_publication_citations=pub.1028483494)
+
 <br><br>
+
 
 ![Example plots from the Shiny app](files/plotExIntro.png)

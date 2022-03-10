@@ -17,13 +17,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ------
 ## **Getting Started with ViReMa Online**
 
-**This tutorial will guide users through analyzing viral recombination data from** [ViReMa](https://bioconda.github.io/recipes/virema/README.html) **using an online app built using the R Shiny framework.** [This Shiny app](https://jasonyeung.shinyapps.io/virema/) lets you analyze your ViReMa output with minimal curation and without needing to code! Follow along or skip to the examples to get an idea of how to use the app to answer your scientific questions.
+**This tutorial will guide users through analyzing viral recombination data from** [ViReMa](https://bioconda.github.io/recipes/virema/README.html) **using an online app built using the R Shiny framework.** [This Shiny app](https://routhlab.shinyapps.io/ViReMaShiny/) lets you analyze your ViReMa output with minimal curation and without needing to code! Follow along or skip to the examples to get an idea of how to use the app to answer your scientific questions.
 
 
 <br>
   
 ## **Setting Up**
-**The application has two main modes:** analysis of local data **'Analyze Local Files'** and analysis of data from our database **'Analyze ViReMa Database'**. **Analysis of local data from your computer stays private** and does not upload or save your data. If you would like to contribute your data to our database, a separate submission form is included under the 'Deposit Sequences' tab.
+**The application has two main modes:** analysis of local data **'Analyze Local Files'** and analysis of data from our database **'Analyze ViReMa Database'** (We're working on this). **Analysis of local data from your computer stays private** and does not upload or save your data. If you would like to contribute your data to our database, a separate submission form is included under the 'Deposit Sequences' tab.
 
 <br>
 
@@ -34,6 +34,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ![Example format for file columns](files/bedColumns.png)
 <br><br>
+
+This figure below illustrates what each column corresponds to:
+<br><br>
+
+![Figure for file columns and sequence](files/ViremaShinyFigure.png)
+<br><br>
+
+
 You can **download some example ViReMa output files** [here](https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_1.txt) and [here](https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_2.txt) - directly download it or copy/paste/save it as a .BED or .TXT file in your favorite text editor. These are two samples of SARS-CoV-2 that have been sequenced and processed with the ViReMa pipeline.
 
 <br>
@@ -55,7 +63,7 @@ You can **download some example ViReMa output files** [here](https://raw.githubu
 ### **Overview Plots**
 **The overview plots are generated based on the entirety of the combined dataset**, not just the events in the table.
 
-Included are nucleotide plots for donor and acceptor sites. **These plots show the frequency of nucleotides proximal and distal to recombination sites.** In order to generate these plots, you had to select the option to produce this output when running the ViReMA pipeline. The necessary columns look like this:
+Included are nucleotide plots for donor and acceptor sites. **These plots show the frequency of nucleotides proximal and distal to recombination sites.** In order to generate these plots, you had to select the option to produce this output when running the ViReMa pipeline. The necessary columns look like this:
 <br><br>
 ![Example format for nucleotide columns](files/nucleotideColumns.PNG)
 <br><br>
@@ -85,7 +93,7 @@ Naturally, you could make annotation files yourself. **The annotations need cert
 ![Example format for annotations](files/annoColumns.png)
 
 <br><br>
-They correspond to the ref seq, start, end, name, value, and strand. Only the first 4 are necessary for our purposes. **Important note - make sure the reference sequence name matches a reference sequence name in your .BED files. The plot will not work otherwise!**
+They correspond to the ref seq, start, end, name, value, and strand. Only the first 4 are necessary for our purposes. You can also include hex codes WITHOUT the # (example - E58601) to add custom colors to your annotations in an additional column at the end. **Important note - make sure the reference sequence name matches a reference sequence name in your .BED files. The plot will not work otherwise!**
 
 The 'Options' dropdown allows for adjustments to the plot. One key feature is putting upper and lower bounds on the nucleotide index. This allows you to focus on areas of interest, removing empty space in the plot.
 

@@ -362,18 +362,21 @@ div.tocify {
 <hr />
 <div id="getting-started-with-virema-online" class="section level2">
 <h2><strong>Getting Started with ViReMa Online</strong></h2>
-<p><strong>This tutorial will guide users through analyzing viral recombination data from</strong> <a href="https://bioconda.github.io/recipes/virema/README.html">ViReMa</a> <strong>using an online app built using the R Shiny framework.</strong> <a href="https://jasonyeung.shinyapps.io/virema/">This Shiny app</a> lets you analyze your ViReMa output with minimal curation and without needing to code! Follow along or skip to the examples to get an idea of how to use the app to answer your scientific questions.</p>
+<p><strong>This tutorial will guide users through analyzing viral recombination data from</strong> <a href="https://bioconda.github.io/recipes/virema/README.html">ViReMa</a> <strong>using an online app built using the R Shiny framework.</strong> <a href="https://routhlab.shinyapps.io/ViReMaShiny/">This Shiny app</a> lets you analyze your ViReMa output with minimal curation and without needing to code! Follow along or skip to the examples to get an idea of how to use the app to answer your scientific questions.</p>
 <p><br></p>
 </div>
 <div id="setting-up" class="section level2">
 <h2><strong>Setting Up</strong></h2>
-<p><strong>The application has two main modes:</strong> analysis of local data <strong>‘Analyze Local Files’</strong> and analysis of data from our database <strong>‘Analyze ViReMa Database’</strong>. <strong>Analysis of local data from your computer stays private</strong> and does not upload or save your data. If you would like to contribute your data to our database, a separate submission form is included under the ‘Deposit Sequences’ tab.</p>
+<p><strong>The application has two main modes:</strong> analysis of local data <strong>‘Analyze Local Files’</strong> and analysis of data from our database <strong>‘Analyze ViReMa Database’</strong> (We’re working on this). <strong>Analysis of local data from your computer stays private</strong> and does not upload or save your data. If you would like to contribute your data to our database, a separate submission form is included under the ‘Deposit Sequences’ tab.</p>
 <p><br></p>
 </div>
 <div id="analyzing-local-files" class="section level2">
 <h2><strong>Analyzing Local Files</strong></h2>
 <p><strong>After you access the ‘Analyze Local Files’ tab, the first step is to upload ViReMa output files.</strong> These come in .BED, .TXT, or .BED6 format. <strong>Your files need to have at least 6 columns</strong> - these correspond to the reference sequence, the donor site (start), the acceptor site (end), a description field, reads, and strandedness. If you selected other options during ViReMa analysis, you may have extra fields like reads at the acceptor site/donor site or nucleotide sequences at those sites.</p>
-<p><img src="files/bedColumns.PNG" alt="Example format for file columns" /> <br><br> You can <strong>download some example ViReMa output files</strong> <a href="https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_1.txt">here</a> and <a href="https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_2.txt">here</a> - directly download it or copy/paste/save it as a .BED or .TXT file in your favorite text editor. These are two samples of SARS-CoV-2 that have been sequenced and processed with the ViReMa pipeline.</p>
+<p><img src="files/bedColumns.PNG" alt="Example format for file columns" /> <br><br></p>
+<p>This figure below illustrates what each column corresponds to: <br><br></p>
+<p><img src="files/ViremaShinyFigure.png" alt="Figure for file columns and sequence" /> <br><br></p>
+<p>You can <strong>download some example ViReMa output files</strong> <a href="https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_1.txt">here</a> and <a href="https://raw.githubusercontent.com/jayeung12/jayeung12.github.io/main/files/SARS-CoV-2_2.txt">here</a> - directly download it or copy/paste/save it as a .BED or .TXT file in your favorite text editor. These are two samples of SARS-CoV-2 that have been sequenced and processed with the ViReMa pipeline.</p>
 <p><br></p>
 <div id="subsetting" class="section level3">
 <h3><strong>Subsetting</strong></h3>
@@ -387,7 +390,7 @@ div.tocify {
 <div id="overview-plots" class="section level3">
 <h3><strong>Overview Plots</strong></h3>
 <p><strong>The overview plots are generated based on the entirety of the combined dataset</strong>, not just the events in the table.</p>
-<p>Included are nucleotide plots for donor and acceptor sites. <strong>These plots show the frequency of nucleotides proximal and distal to recombination sites.</strong> In order to generate these plots, you had to select the option to produce this output when running the ViReMA pipeline. The necessary columns look like this: <br><br> <img src="files/nucleotideColumns.PNG" alt="Example format for nucleotide columns" /> <br><br></p>
+<p>Included are nucleotide plots for donor and acceptor sites. <strong>These plots show the frequency of nucleotides proximal and distal to recombination sites.</strong> In order to generate these plots, you had to select the option to produce this output when running the ViReMa pipeline. The necessary columns look like this: <br><br> <img src="files/nucleotideColumns.PNG" alt="Example format for nucleotide columns" /> <br><br></p>
 <p><br></p>
 </div>
 <div id="genomic-viewer" class="section level3">
@@ -397,7 +400,7 @@ div.tocify {
 <p><br> The UCSC Genome browser website has a comprehensive collection of annotations for SARS-CoV-2. Access the “Data Integrator” at <a href="https://genome.ucsc.edu/cgi-bin/hgIntegrator" class="uri">https://genome.ucsc.edu/cgi-bin/hgIntegrator</a>. Below shows the process of exporting data:</p>
 <p><img src="files/exportUCSCanno.gif" alt="Accessing the annotations at UCSC" /></p>
 <p><br><br> Then, copy the data into Notepad or another text editor and save it as a .BED or .TXT file. <br><br> Naturally, you could make annotation files yourself. <strong>The annotations need certain columns to be plottable:</strong> <br><br> <img src="files/annoColumns.png" alt="Example format for annotations" /></p>
-<p><br><br> They correspond to the ref seq, start, end, name, value, and strand. Only the first 4 are necessary for our purposes. <strong>Important note - make sure the reference sequence name matches a reference sequence name in your .BED files. The plot will not work otherwise!</strong></p>
+<p><br><br> They correspond to the ref seq, start, end, name, value, and strand. Only the first 4 are necessary for our purposes. You can also include hex codes WITHOUT the # (example - E58601) to add custom colors to your annotations in an additional column at the end. <strong>Important note - make sure the reference sequence name matches a reference sequence name in your .BED files. The plot will not work otherwise!</strong></p>
 <p>The ‘Options’ dropdown allows for adjustments to the plot. One key feature is putting upper and lower bounds on the nucleotide index. This allows you to focus on areas of interest, removing empty space in the plot.</p>
 <p><br></p>
 </div>
