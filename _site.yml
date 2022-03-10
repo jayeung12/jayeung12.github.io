@@ -7,13 +7,13 @@ navbar:
     - text: "Tutorial with Shiny"
       href: shinytutorial.html
     - text: "ViReMa Web App"
-      href: https://jasonyeung.shinyapps.io/virema/
+      href: https://routhlab.shinyapps.io/ViReMaShiny/
 
   right: 
     - icon: fa-envelope fa-lg
       href: mailto:<jasonyeung012@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/jayeung12/
+      href: https://github.com/routhlab/ViReMaShiny
 output:
   html_document:
     theme: yeti
