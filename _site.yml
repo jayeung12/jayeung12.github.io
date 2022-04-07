@@ -11,7 +11,7 @@ navbar:
 
   right: 
     - icon: fa-envelope fa-lg
-      href: mailto:<jasonyeung012@gmail.com>
+      href: mailto:<routhlabgh@gmail.com>
     - icon: fa-github fa-lg
       href: https://github.com/routhlab/ViReMaShiny
 output:
